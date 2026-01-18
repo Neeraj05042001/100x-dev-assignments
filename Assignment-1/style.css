@@ -24,7 +24,7 @@ h1 {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 .heading {
   font-family: "Rubik", sans-serif;
@@ -56,8 +56,8 @@ h3 {
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 12px;
-  transition: all;
-  transition-duration: 300;
+  transition-property: background-color, border-color, transform;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   cursor: pointer;
 }
@@ -130,12 +130,19 @@ input:hover {
   height: 48px;
   border-radius: 12px;
   margin-top: 20px;
-  background: #a6a6ae;
+  background-color: #a6a6ae;
   border: none;
   color: #fafafb;
   font-size: 12px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
+
+  transition-property: background-color, border-color, transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.sign-in:hover {
+  background-color: #878789;
 }
 
 .sign-up {
