@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+  /* background-color: blue; */
+}
+
+.container {
+  height: 100dvh;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+
+.left {
+  background-color: #1c1c1c;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+}
+.left-container {
+  /* border: 1px solid white; */
+  margin-top: 10px;
+  height: 100%;
+}
+.heading {
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 55px;
+}
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 2.2rem;
+}
+.features-container {
+  margin-top: 1.4rem;
+}
+.features {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+span {
+  font-size: 1rem;
+  /* line-height: 22px; */
+  font-weight: 400;
+}
+.img {
+  height: 20px;
+  width: 20px;
+}
+.brands {
+  margin-top: 3rem;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #949494;
+}
+.brands-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  padding: 2rem;
+}
+.brands-logos > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.star {
+  display: none;
+}
+
+.right {
+  height: 100%;
+  width: 100%;
+  padding: 2.5rem;
+}
+.right-container {
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 100%;
+}
+.right-heading {
+  color: black;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 55px;
+}
+.subtitle {
+  color: #6f6f6f;
+  font-weight: 400;
+}
+.title {
+  margin-top: 30px;
+}
+.title > p {
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+input {
+  height: 40px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  border: 1px solid #d3d1d1;
+  padding-left: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 45px;
+  border: none;
+  background-color: #7a7979;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .container {
+  }
+  .left {
+    padding: 1.7rem;
+  }
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .brands-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  .brands-logos > img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-heading {
+    font-size: 2.4rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .btn-container {
+    justify-content: space-between;
+  }
+  .btn {
+  }
+
+  .line-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  .line-1 {
+    height: 4px;
+    width: 80px;
+    background-color: black;
+    border-radius: 20px;
+  }
+  .line-2 {
+    height: 4px;
+    width: 80px;
+    background-color: rgb(157, 156, 156);
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+  .left {
+    padding: 3.2rem;
+  }
+  h2 {
+    margin-bottom: 3.2rem;
+  }
+  .heading {
+    font-size: 2.8rem;
+  }
+  span {
+    font-size: 1.2rem;
+  }
+  .brand {
+  }
+  .brands-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .brands-logos > img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .star-text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .right-container {
+    justify-content: center;
+  }
+  .right-heading {
+  }
+  .subtitle {
+  }
+
+  .line-1 {
+    width: 60px;
+  }
+  .line-2 {
+    width: 60px;
+  }
+}
