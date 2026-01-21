@@ -2,31 +2,37 @@ import React from "react";
 
 const features = [
   {
+    id:"1",
     title: "Live Interaction Sessions",
     description:
       "Learn in real-time with weekend live sessions, interactive Q&A, and direct mentorship from industry experts.",
   },
   {
+    id:"2",
     title: "Real Engineer, Real Experience",
     description:
       "Learn from Harkirat Singh who has built & scaled real-world systems at top tech companies.",
   },
   {
+    id:"3",
     title: "Learn by Doing",
     description:
       "Hands-on projects, open-source contributions & practical coding. Build payment systems, automation tools & end-to-end applications.",
   },
   {
+    id:"4",
     title: "Job-Ready Curriculum",
     description:
       "Master DSA, System Design, DevOps & scalable full-stack skills. From JavaScript to MERN stack & blockchain technologies.",
   },
   {
+    id:"5",
     title: "Career Support & Community",
     description:
       "Personalized career guidance, mock interviews, access to top hiring partners & a supportive community of ambitious learners.",
   },
   {
+    id:"6",
     title: "Lifetime Access",
     description:
       "Lifetime access to course assignments & one-year access to session recordings for continuous learning at your pace.",
@@ -50,7 +56,7 @@ const Features = () => {
           <div className="flex gap-4 overflow-x-auto flex-nowrap scrollbar-hide scroll-smooth [mask-image:linear-gradient(to_right,transparent,black_40px,black_calc(100%-40px),transparent)]">
             {features.map((feature, index) => (
               <div
-                key={feature.title}
+                key={feature.id}
                 className="feature-card bg-white px-6 pt-8 pb-18 max-w-100 rounded-2xl shadow-xl flex-none transition-transform duration-300"
                 style={{ "--i": index }}
               >

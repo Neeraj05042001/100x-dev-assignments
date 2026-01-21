@@ -45,7 +45,7 @@ const FAQ = () => {
         {questions.map((question, index) => {
           const isOpen = openIndex === index;
           return (
-            <div className="px-4 ">
+            <div className="px-4 " key={index}>
               <div
                 className="cursor-pointer flex items-start justify-between"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}

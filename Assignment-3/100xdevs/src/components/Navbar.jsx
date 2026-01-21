@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="h-18 flex justify-between px-4 py-6 items-center  lg:shadow-xl xl:px-30 lg:px-6 rounded-xl ">
+    <nav className="h-18 flex justify-between px-4 py-6 items-center  lg:shadow-xl xl:px-30 lg:px-6 rounded-xl lg:w-full ">
       <div className=" flex items-center gap-6 ">
         <p className="font-extrabold font-lato text-[#001049] text-xl tracking-tight">
           100

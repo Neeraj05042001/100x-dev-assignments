@@ -8,12 +8,12 @@ const card = [
     link: "dRXq81Om2a4",
   },
   {
-    id: 1,
+    id: 2,
     description: "$25000 Bug Bounty, $100k Offer as a Solana Engineer",
     link: "PZNgcH2Jtac",
   },
   {
-    id: 1,
+    id: 3,
     description: "How He Cracked A 40Lakhs Remote Coding Job (Complete Story)",
     link: "TbbCJQ4Vbko",
   },

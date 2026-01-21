@@ -1,19 +1,24 @@
 import React from "react";
+import AnimatedCounter from "./AnimatedCounter";
 
 const grid1 = [
   {
     icon: "/icons/user.svg",
     title: "27",
+    suffix: "",
     subtitle: "Students cracked GSoC 2025",
   },
   {
     icon: "/icons/trophy.svg",
-    title: "$150K",
+    title: "150",
+    prefix: "$",
+    suffix: "K",
     subtitle: "Highest International package",
   },
   {
     icon: "/icons/bag.svg",
-    title: "200+",
+    title: "200",
+    suffix: "+",
     subtitle: "High paying internships       confirmed",
   },
 ];
@@ -47,7 +52,8 @@ const Statics = () => {
                 </div>
                 <div>
                   <p className="text-[#e5e5e5] text-4xl font-semibold">
-                    {item.title}
+                    <span>{item.prefix}</span>
+                    <AnimatedCounter end={item.title} suffix={item.suffix} />
                   </p>
                   <p className="text-[#e5e5e5b3] text-[17px] font-normal tracking-wide">
                     {item.subtitle}

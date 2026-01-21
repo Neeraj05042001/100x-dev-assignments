@@ -3,16 +3,16 @@ import React from "react";
 const Footer = () => {
   return (
     <section className="bg-[#000000] px-8 py-14">
-      <div className="md:flex md:justify-between items-center">
+      <div className="md:flex md:justify-between items-center lg:px-16">
         <p className="font-extrabold font-lato text-white text-3xl tracking-tight">
           100
           <span className="text-[#EB2E37]">x</span>Devs
         </p>
 
-        <div className=" pt-4">
-          <h3 className="text-sm text-[#d1d5dc]">Terms & Conditions</h3>
-          <h3 className="text-sm text-[#d1d5dc] my-3">Privacy Policy</h3>
-          <h3 className="text-sm text-[#d1d5dc]">Refund & Cancellation</h3>
+        <div className=" pt-4 ">
+          <h3 className="text-sm lg:text-lg text-[#d1d5dc]">Terms & Conditions</h3>
+          <h3 className="text-sm lg:text-lg text-[#d1d5dc] my-3">Privacy Policy</h3>
+          <h3 className="text-sm lg:text-lg text-[#d1d5dc]">Refund & Cancellation</h3>
         </div>
         <div>
           <div className="flex gap-3 mt-6">
