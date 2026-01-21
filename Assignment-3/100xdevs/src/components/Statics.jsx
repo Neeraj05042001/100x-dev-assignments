@@ -29,7 +29,7 @@ const categories = [
 
 const Statics = () => {
   return (
-    <section className="mt-16  ">
+    <section className="mt-16 section-animate ">
       <div className="md:grid md:grid-cols-3 md:gap-6  ">
         <div className="bg-[#001959] w-full  col-span-3 px-6 py-16 rounded-xl rounded-tr-[130px] md:flex ">
           {grid1.map((item, index) => (
