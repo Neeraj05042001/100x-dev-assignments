@@ -124,3 +124,34 @@ html {
 #courses-section .card-container:nth-child(4) { animation-delay: 1.2s; }
 #courses-section .card-container:nth-child(5) { animation-delay: 1.5s; }
 #courses-section .card-container:nth-child(6) { animation-delay: 1.9s; }
+
+
+
+
+
+/* ===== FEATURES AUTO-SCROLL ===== */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Enhanced card effects */
+.feature-card {
+  transform-origin: center;
+  will-change: transform, background-color, box-shadow;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.feature-card:hover {
+  z-index: 10;
+}
+
+/* Smooth transform for GPU acceleration */
+.feature-card {
+  transform: translateZ(0);
+}
