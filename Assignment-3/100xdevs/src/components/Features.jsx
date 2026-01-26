@@ -108,7 +108,7 @@ const Features = () => {
             className="flex gap-4 overflow-x-auto flex-nowrap scrollbar-hide [mask-image:linear-gradient(to_right,transparent,black_40px,black_calc(100%-40px),transparent)]"
             style={{ scrollBehavior: "auto" }}
           >
-            {/* Duplicate features for seamless loop */}
+            
             {[...features, ...features].map((feature, index) => (
               <div
                 key={`${feature.id}-${index}`}
