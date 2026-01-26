@@ -17,7 +17,7 @@ const Hero = () => {
             <p className="text-center md:hidden">with better UI/UX</p>
 
             {/* for md devices */}
-            <h1 className="text-5xl text-center">Your Ordinary AI chat</h1>
+            <h1 className="text-5xl text-center hidden md:block">Your Ordinary AI chat</h1>
             <h1 className="text-5xl text-center">app but with better UI/UX</h1>
           </div>
           <div className="text-[16px] text-[#c2b6cf] px-2  text-center pb-8 md:mt-2 ">
