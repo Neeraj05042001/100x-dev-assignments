@@ -1,3 +1,20 @@
+// Todo:Write a program to print the following hollow-triangle pattern
+
+// when input is 6, the output is as below:
+//                         *
+//                        * *
+//                       *   *
+//                      *     *
+//                     *       *
+//                    * * * * * *
+
+// when input is 4, the output is as below:
+
+//                          *
+//                         * *
+//                        *   *
+//                       * * * *
+
 var fs = require("fs");
 var input = fs.readFileSync(0, "utf-8").trim();
 var n = parseInt(input);

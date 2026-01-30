@@ -1,3 +1,19 @@
+// Todo:Write a program to print the following binary-pyramid pattern
+
+// when input is 6, the output is as below:
+
+//                 0
+//                 10
+//                 010
+//                 1010
+//                 01010
+//                 101010
+
+// when input is 2, the output is as below:
+
+//                 0
+//                 10
+
 var fs = require("fs");
 var input = fs.readFileSync(0, "utf8").trim();
 var n = parseInt(input);

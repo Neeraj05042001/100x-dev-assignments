@@ -1,3 +1,17 @@
+// Todo:Write a program to print the following inverse-pyramid pattern
+
+// when input is 3, the output is as below:
+//                    ***
+//                    **
+//                    *
+
+// when input is 5, the output is as below:
+//                    *****
+//                    ****
+//                    ***
+//                    **
+//                    *
+
 var fs = require("fs");
 var input = fs.readFileSync(0, "utf8").trim();
 

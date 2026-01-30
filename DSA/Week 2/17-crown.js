@@ -1,5 +1,6 @@
 // TODO: write a program to print Crown Pattern
 
+// When input is 7, the output is as shown below
 /**
  *          *            *
  *          **          **
@@ -9,6 +10,14 @@
  *          ******  ******
  *          **************
  */
+
+
+// When input is 4, the output is as shown below
+
+//               *      *
+//               **    **
+//               ***  ***
+//               ********
 
 var fs = require("fs");
 var input = fs.readFileSync(0, "utf-8").trim();

@@ -1,4 +1,6 @@
-// TODO: write a function to print the following oinverted hollow triangle pattern
+// TODO: write a function to print the following inverted-hollow triangle pattern
+
+// When input is 7, the output is as below:
 
 /**
  * * * * * * * *
@@ -10,6 +12,10 @@
  *       *
  *
  */
+// When input is 3, the output is as below:
+//            * * * 
+//             * * 
+//              * 
 var fs = require("fs");
 var input = fs.readFileSync(0, "utf-8").trim();
 var n = parseInt(input);

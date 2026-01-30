@@ -1,3 +1,18 @@
+// Todo: Write a program to print the following M-star pattern
+
+// when input is 5, 6, output is as follows:
+
+//             ******
+//             ******
+//             ******
+//             ******
+//             ******
+
+// when input is 3, 5, output is as follows:
+//             *****
+//             *****
+//             *****
+
 var fs = require("fs");
 var input = fs.readFileSync(0, "utf8").trim();
 var parts = input.split(" ");

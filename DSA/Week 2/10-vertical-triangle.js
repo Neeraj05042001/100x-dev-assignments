@@ -1,3 +1,33 @@
+// Todo:Write a program to print the following vertical-triangle pattern
+
+// when input is 4, the output is as below:
+//                 * 
+//                 * * 
+//                 * * * 
+//                 * * * * 
+//                 * * * 
+//                 * * 
+//                 * 
+
+// when input is 7, the output is as below:
+
+//                     * 
+//                     * * 
+//                     * * * 
+//                     * * * * 
+//                     * * * * * 
+//                     * * * * * * 
+//                     * * * * * * * 
+//                     * * * * * * 
+//                     * * * * * 
+//                     * * * * 
+//                     * * * 
+//                     * * 
+//                     * 
+
+
+
+
 var fs = require("fs");
 var input = fs.readFileSync(0, "utf-8").trim();
 

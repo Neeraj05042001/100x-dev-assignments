@@ -1,3 +1,32 @@
+// Todo:Write a program to print the following holllow-square pattern
+
+// when input is 6, the output is as below:
+
+//                        ******
+//                        *    *
+//                        *    *
+//                        *    *
+//                        *    *
+//                        ******
+
+// when input is 2, the output is as below:
+//                        **
+//                        **
+// when input is 8, the output is as below:
+
+//                        ********
+//                        *      *
+//                        *      *
+//                        *      *
+//                        *      *
+//                        *      *
+//                        *      *
+//                        ********
+
+
+
+
+
 var fs = require("fs");
 var input = fs.readFileSync(0, "utf8").trim();
 var n = parseInt(input);
