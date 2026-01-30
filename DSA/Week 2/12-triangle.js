@@ -16,11 +16,11 @@
 
 
 
-// var fs = require("fs");
-// var input = fs.readFileSync(0, "utf-8").trim();
-// var n = parseInt(input);
+var fs = require("fs");
+var input = fs.readFileSync(0, "utf-8").trim();
+var n = parseInt(input);
 
-var n = 3;
+
 
 function triangle(a) {
   for (var i = 1; i <= a; i++) {
