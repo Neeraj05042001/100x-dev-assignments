@@ -1,53 +1,64 @@
+# Pattern Printing Problems🚀
 
+### Question-1:
 
-Question-1: 
+#### WAP to print this
 
-WAP to print this
-
-*
-**
-***
-****
-*****    
-
-
-Question-2: 
-
-WAP to print this 
-
-   *
+```js
+ ***
   ***
- *****
-*******
+  ***
+  ***
+```
 
+### Question-2:
 
-Question-3:
+###WAP to print this
 
-WAP to print this
+```js
+-
 
-*****
-*   *
-*   *
-*****
+---
 
+---
 
-Question-4:
+---
 
-WAP to print this
+```
 
-1
-12
-123
-1234
-12345
+### Question-3:
 
+#### WAP to print this
 
-Question-5
+```js
+---
 
-WAP to print this
+- -
+- -
 
-    A
-   BBB
-  CCCCC
- DDDDDDD
-EEEEEEEEE
+---
+```
+
+### Question-4:
+
+#### WAP to print this
+
+```js
+1;
+12;
+123;
+1234;
+12345;
+```
+
+### Question-5
+
+#### WAP to print this
+
+```js
+A;
+BBB;
+CCCCC;
+DDDDDDD;
+EEEEEEEEE;
+```
