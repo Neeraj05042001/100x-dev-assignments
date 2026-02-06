@@ -1,0 +1,10 @@
+{
+  "name": "100x-dev-assignments",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
