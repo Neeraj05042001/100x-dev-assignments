@@ -1,18 +1,19 @@
-const batchProcess = require("../callbacks/medium/batchProcess");
+const batchProcess = require("../04-batch-process");
 
 describe("batchProcess", () => {
-  
   test("Order Preservation: Result indices should match input indices", (done) => {
-   
     const items = [100, 50, 10];
-    const worker = (delay, cb) => setTimeout(() => cb(null, `Finished ${delay}`), delay);
+    const worker = (delay, cb) =>
+      setTimeout(() => cb(null, `Finished ${delay}`), delay);
 
     batchProcess(items, 2, worker, (err, results) => {
       try {
         expect(err).toBeNull();
         expect(results).toEqual(["Finished 100", "Finished 50", "Finished 10"]);
         done();
-      } catch (e) { done(e); }
+      } catch (e) {
+        done(e);
+      }
     });
   });
 
@@ -24,7 +25,7 @@ describe("batchProcess", () => {
     const worker = (item, cb) => {
       runningCounter++;
       maxObserved = Math.max(maxObserved, runningCounter);
-      
+
       setTimeout(() => {
         runningCounter--;
         cb(null, item);
@@ -36,7 +37,9 @@ describe("batchProcess", () => {
         expect(maxObserved).toBeLessThanOrEqual(2);
         expect(results.length).toBe(5);
         done();
-      } catch (e) { done(e); }
+      } catch (e) {
+        done(e);
+      }
     });
   });
 
@@ -52,14 +55,21 @@ describe("batchProcess", () => {
         expect(err).toBeDefined();
         expect(err.message).toBe("Boom");
         done();
-      } catch (e) { done(e); }
+      } catch (e) {
+        done(e);
+      }
     });
   });
 
   test("Empty Array: Should handle empty inputs gracefully", (done) => {
-    batchProcess([], 5, (item, cb) => cb(), (err, results) => {
-      expect(results).toEqual([]);
-      done();
-    });
+    batchProcess(
+      [],
+      5,
+      (item, cb) => cb(),
+      (err, results) => {
+        expect(results).toEqual([]);
+        done();
+      },
+    );
   });
 });

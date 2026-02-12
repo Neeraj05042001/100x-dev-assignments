@@ -1,4 +1,4 @@
-const runWithDependencies = require("../callbacks/medium/runWithDependencies");
+const runWithDependencies = require("../06-run-with-dependencies");
 
 describe("runWithDependencies callback", () => {
   test("runs tasks in correct order based on dependencies", (done) => {

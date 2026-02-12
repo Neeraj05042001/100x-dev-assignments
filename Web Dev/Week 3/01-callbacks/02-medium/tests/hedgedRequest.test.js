@@ -1,4 +1,4 @@
-const hedgedRequest = require("../callbacks/medium/hedgedRequest");
+const hedgedRequest = require("../05-hedged-request");
 
 describe("hedgedRequest", () => {
   

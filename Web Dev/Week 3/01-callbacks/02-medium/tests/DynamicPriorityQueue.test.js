@@ -1,4 +1,4 @@
-const DynamicPriorityQueue = require("../callbacks/medium/DynamicPriorityQueue");
+const DynamicPriorityQueue = require("../02-dynamic-priority-queue");
 
 describe("DynamicPriorityQueue callback", () => {
   test("executes tasks based on priority order", (done) => {

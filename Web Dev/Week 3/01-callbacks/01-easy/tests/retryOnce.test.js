@@ -1,4 +1,4 @@
-const retryOnce = require("../callbacks/easy/retryOnce");
+const retryOnce = require("../06-retryOnce");
 
 describe("retryOnce callback", () => {
   test("retries once after failure and then succeeds", (done) => {

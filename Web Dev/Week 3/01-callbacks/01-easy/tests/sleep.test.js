@@ -1,4 +1,4 @@
-const sleep = require("../callbacks/easy/sleep");
+const sleep = require("../07-sleep");
 
 describe("sleep callback", () => {
   test("waits for the specified time before calling back", (done) => {
@@ -14,5 +14,5 @@ describe("sleep callback", () => {
         done(error);
       }
     });
-  }, 200); 
+  }, 200);
 });

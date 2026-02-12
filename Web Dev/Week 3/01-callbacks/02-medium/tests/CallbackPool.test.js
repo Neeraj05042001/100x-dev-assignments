@@ -1,4 +1,4 @@
-const CallbackPool = require("../callbacks/medium/CallbackPool");
+const CallbackPool = require("../01-callback-pool");
 
 describe("CallbackPool", () => {
   test("limits concurrency to the specified amount", (done) => {
