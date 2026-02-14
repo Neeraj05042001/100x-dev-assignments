@@ -1,4 +1,4 @@
-const eventLoopRace = require("../cpu-io/easy/eventLoopRace");
+const eventLoopRace = require("../04-eventLoopRace");
 
 describe("eventLoopRace", () => {
   test("logs messages in correct event loop order", (done) => {

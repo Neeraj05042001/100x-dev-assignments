@@ -7,13 +7,27 @@
 // As tasks complete, queued tasks should start automatically.
 // Each task must invoke its callback with its result when finished.
 
-
 class CallbackPool {
-  constructor(limit) {}
+  constructor(limit) {
+    this.taskLimit = limit;
+    this.activeTask = 0;
+    this.taskQueue = [];
+  }
 
-  run(task, onComplete) {}
+  run(task, onComplete) {
+    if (this.activeTask < this.taskLimit) {
+      onComplete();
+    } else {
+      this.taskQueue.push(task);
+    }
+  }
 
-  _next() {}
+  // _next(onComplete) {
+  //   if (this.taskQueue.length > 0 && this.activeTask < this.taskLimit) {
+  //     const nextTask = this.taskQueue.shift();
+  //     onComplete(nextTask);
+  //   }
+  // }
 }
 
 module.exports = CallbackPool;

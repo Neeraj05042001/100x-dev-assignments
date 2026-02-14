@@ -1,4 +1,4 @@
-const heavyCPU = require("../cpu-io/easy/heavyCPU");
+const heavyCPU = require("../05-heavyCPU");
 
 describe("heavyCPU", () => {
   test("returns correct sum for small iterations", () => {

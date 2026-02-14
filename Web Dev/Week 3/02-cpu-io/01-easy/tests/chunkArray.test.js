@@ -1,4 +1,4 @@
-const chunkArray = require("../cpu-io/easy/chunkArray");
+const chunkArray = require("../03-chunkArray");
 
 describe("chunkArray", () => {
   test("should split an array into chunks of size 2", () => {

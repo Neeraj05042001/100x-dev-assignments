@@ -1,4 +1,4 @@
-const checkFileExists = require("../cpu-io/easy/checkFileExists");
+const checkFileExists = require("../02-checkFileExists");
 const fs = require("fs").promises;
 const path = require("path");
 const os = require("os");

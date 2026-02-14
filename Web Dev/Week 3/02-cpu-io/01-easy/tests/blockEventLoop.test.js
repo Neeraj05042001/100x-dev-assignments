@@ -1,4 +1,4 @@
-const blockEventLoop = require("../cpu-io/easy/blockEventLoop");
+const blockEventLoop = require("../01-blockEventLoop");
 
 describe("blockEventLoop", () => {
   test("should block the execution for at least the specified time", () => {

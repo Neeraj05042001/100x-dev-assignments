@@ -1,4 +1,4 @@
-const ioWithTimeout = require("../cpu-io/easy/ioWithTimeout");
+const ioWithTimeout = require("../06-ioWithTimeout");
 
 describe("ioWithTimeout", () => {
   test("resolves when I/O completes within time limit", async () => {
