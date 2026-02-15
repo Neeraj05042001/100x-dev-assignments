@@ -1,4 +1,4 @@
-const runSequential = require("../cpu-io/easy/runSequential");
+const runSequential = require("../09-runSequential");
 
 describe("runSequential", () => {
   test("executes async functions one after another in order", async () => {

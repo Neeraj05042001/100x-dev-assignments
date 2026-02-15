@@ -1,4 +1,4 @@
-const yieldedCPU = require("../cpu-io/easy/yieldedCPU");
+const yieldedCPU = require("../11-yieldedCPU");
 
 describe("yieldedCPU", () => {
   test("returns correct sum", async () => {

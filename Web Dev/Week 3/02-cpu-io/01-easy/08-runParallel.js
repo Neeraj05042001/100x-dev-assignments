@@ -10,12 +10,9 @@
 // should immediately reject with that error.
 
 async function runParallel(functions) {
-const resolved = []
-    functions.forEach(fn => {
-        new Promise((resolve, reject)=>{
-            resolve(fn)
-        })
-    });
+  const promises = functions.map((fn) => fn());
+
+  return Promise.all(promises);
 }
 
 module.exports = runParallel;

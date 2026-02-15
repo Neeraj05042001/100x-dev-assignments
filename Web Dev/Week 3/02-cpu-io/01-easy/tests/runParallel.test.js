@@ -1,4 +1,4 @@
-const runParallel = require("../cpu-io/easy/runParallel");
+const runParallel = require("../08-runParallel");
 
 describe("runParallel", () => {
   test("executes all async functions in parallel and returns results in order", async () => {

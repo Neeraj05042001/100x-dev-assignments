@@ -1,4 +1,4 @@
-const sumFileSizes = require("../cpu-io/easy/sumFileSizes");
+const sumFileSizes = require("../10-sumFileSizes");
 const fs = require("fs").promises;
 const path = require("path");
 const os = require("os");
