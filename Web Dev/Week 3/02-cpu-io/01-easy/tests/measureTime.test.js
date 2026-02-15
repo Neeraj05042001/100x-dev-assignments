@@ -1,4 +1,4 @@
-const measureTime = require("../cpu-io/easy/measureTime");
+const measureTime = require("../07-measureTime");
 
 describe("measureTime", () => {
   test("should measure the time of a 100ms async function", async () => {

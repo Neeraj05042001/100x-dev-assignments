@@ -9,6 +9,13 @@
 // If any of the asynchronous functions reject, the returned promise
 // should immediately reject with that error.
 
-async function runParallel(functions) {}
+async function runParallel(functions) {
+const resolved = []
+    functions.forEach(fn => {
+        new Promise((resolve, reject)=>{
+            resolve(fn)
+        })
+    });
+}
 
 module.exports = runParallel;

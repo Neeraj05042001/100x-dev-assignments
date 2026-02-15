@@ -8,8 +8,11 @@
 // 2. The function should handle errors (if fn throws, you should still catch the time or rethrow)
 // 3. Use performance.now() or Date.now() for timing.
 
-// async function measureTime(fn) {}
+async function measureTime(fn) {
+  const startTime = performance.now();
+  await fn();
+  endTime = performance.now();
+  return endTime - startTime;
+}
 
-// module.exports = measureTime;
-
-
+module.exports = measureTime;
