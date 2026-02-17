@@ -1,4 +1,4 @@
-const AsyncCache = require("../cpu-io/medium/AsyncCache");
+const AsyncCache = require("../01-asyncCache");
 
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 

@@ -1,4 +1,4 @@
-const chunkedProcessor = require("../cpu-io/medium/chunkedProcessor");
+const chunkedProcessor = require("../02-chunkedProcessor");
 
 describe("chunkedProcessor", () => {
   test("should process all items in the array", (done) => {
