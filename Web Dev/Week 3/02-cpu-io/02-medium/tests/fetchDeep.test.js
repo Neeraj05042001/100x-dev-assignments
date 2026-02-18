@@ -1,4 +1,4 @@
-const fetchDeep = require("../cpu-io/medium/fetchDeep");
+const fetchDeep = require("../04-fetchDeep");
 
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 

@@ -1,4 +1,4 @@
-const deduplicatedFetch = require("../cpu-io/medium/deduplicatedFetch");
+const deduplicatedFetch = require("../03-deduplicatedFetch");
 
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 

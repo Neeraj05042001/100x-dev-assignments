@@ -1,4 +1,4 @@
-const retryWithJitter = require("../cpu-io/medium/retryWithJitter");
+const retryWithJitter = require("../07-retryWithJitter");
 
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 

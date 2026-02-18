@@ -1,4 +1,4 @@
-const processLargeArray = require("../cpu-io/medium/processLargeArray");
+const processLargeArray = require("../06-processLargeArray");
 
 describe("processLargeArray", () => {
   test("processes all items", async () => {

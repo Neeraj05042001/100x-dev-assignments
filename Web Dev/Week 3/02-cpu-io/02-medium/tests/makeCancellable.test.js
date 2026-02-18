@@ -1,6 +1,6 @@
-const makeCancellable = require("../cpu-io/medium/makeCancellable");
+const makeCancellable = require("../05-makeCancellable");
 
-const sleep = ms => new Promise(res => setTimeout(res, ms));
+const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
 describe("makeCancellable", () => {
   test("resolves when promise resolves normally", async () => {
@@ -18,9 +18,9 @@ describe("makeCancellable", () => {
 
     const promise = Promise.resolve("should not resolve");
 
-    await expect(
-      makeCancellable(promise, controller.signal)
-    ).rejects.toThrow("Aborted");
+    await expect(makeCancellable(promise, controller.signal)).rejects.toThrow(
+      "Aborted",
+    );
   });
 
   test("rejects if aborted while promise is pending", async () => {
@@ -41,9 +41,9 @@ describe("makeCancellable", () => {
 
     const promise = Promise.reject(new Error("boom"));
 
-    await expect(
-      makeCancellable(promise, controller.signal)
-    ).rejects.toThrow("boom");
+    await expect(makeCancellable(promise, controller.signal)).rejects.toThrow(
+      "boom",
+    );
   });
 
   test("abort wins over late resolution", async () => {
