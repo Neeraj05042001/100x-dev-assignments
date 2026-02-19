@@ -1,4 +1,4 @@
-const delayResult = require("../promises/easy/delayResult");
+const delayResult = require("../delayResult");
 
 describe("delayResult Promise", () => {
   test("resolves with the correct value after a delay", async () => {

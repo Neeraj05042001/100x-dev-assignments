@@ -1,4 +1,4 @@
-const doubleTry = require("../promises/easy/doubleTry");
+const doubleTry = require("../doubleTry");
 
 describe("doubleTry Promise", () => {
   test("returns result on first attempt if successful", async () => {

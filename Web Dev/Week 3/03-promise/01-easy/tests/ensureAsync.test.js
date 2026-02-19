@@ -1,4 +1,4 @@
-const ensureAsync = require("../promises/easy/ensureAsync");
+const ensureAsync = require("../ensureAsync");
 
 describe("ensureAsync", () => {
   test("wraps a synchronous function and returns a promise", async () => {

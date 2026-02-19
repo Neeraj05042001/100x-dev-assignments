@@ -1,4 +1,4 @@
-const promiseAll = require("../promises/easy/promiseAll");
+const promiseAll = require("../promiseAll");
 
 describe("promiseAll", () => {
   test("resolves with values in correct order", async () => {

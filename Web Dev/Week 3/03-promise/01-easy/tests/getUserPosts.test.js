@@ -1,4 +1,4 @@
-const getUserPosts = require("../promises/easy/getUserPosts");
+const getUserPosts = require("../getUserPosts");
 
 describe("getUserPosts", () => {
   test("fetches posts for a valid user", async () => {
