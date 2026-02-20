@@ -1,4 +1,4 @@
-const withTimeoutPromise = require("../promises/easy/withTimeoutPromise");
+const withTimeoutPromise = require("../withTimeoutPromise");
 
 describe("withTimeoutPromise Wrapper", () => {
   test("resolves if the original promise is faster than the timeout", async () => {

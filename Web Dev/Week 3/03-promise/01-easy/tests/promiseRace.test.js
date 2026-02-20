@@ -1,4 +1,4 @@
-const promiseRace = require("../promises/easy/promiseRace");
+const promiseRace = require("../promiseRace");
 
 describe("promiseRace", () => {
   test("resolves with the fastest resolved promise", async () => {

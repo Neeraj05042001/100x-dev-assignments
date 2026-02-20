@@ -1,4 +1,4 @@
-const promiseAny = require("../promises/easy/promiseAny");
+const promiseAny = require("../promiseAny");
 
 describe("promiseAny", () => {
   test("resolves with the first fulfilled promise", async () => {

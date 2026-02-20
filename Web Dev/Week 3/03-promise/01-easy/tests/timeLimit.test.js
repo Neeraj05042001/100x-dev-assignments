@@ -1,4 +1,4 @@
-const timeLimit = require("../promises/easy/timeLimit");
+const timeLimit = require("../timeLimit");
 
 describe("timeLimit", () => {
   test("resolves if function finishes within time limit", async () => {

@@ -1,4 +1,4 @@
-const sumPromises = require("../promises/easy/sumPromises");
+const sumPromises = require("../sumPromises");
 
 describe("sumPromises", () => {
   test("resolves to the sum of two resolved promises", async () => {

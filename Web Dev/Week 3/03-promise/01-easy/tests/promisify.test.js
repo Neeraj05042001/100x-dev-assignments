@@ -1,4 +1,4 @@
-const promisify = require("../promises/easy/promisify");
+const promisify = require("../promisify");
 
 describe("promisify Utility", () => {
   test("resolves when the original function succeeds", async () => {
